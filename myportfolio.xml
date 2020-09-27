@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_myportfolio</name>
+	<author>Samybaxy</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright 2011, All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@samybaxy.net</authorEmail>
+	<authorUrl>http://www.samybaxy.net</authorUrl>
+	<version>4.0.0</version>
+	<description>MyPortfolio is a Joomla component, designed to help you manage your online portfolio</description>
+
+	<!-- Custom install script to execute -->
+	<scriptfile>myportfolio.script.php</scriptfile>
+	
+	<install folder="admin"> <!-- Runs on install -->
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.utf8.sql</file>
+			<file charset="utf8" driver="mysqli">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall folder="admin"> <!-- Runs on uninstall -->
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.utf8.sql</file>
+			<file charset="utf8" driver="mysqli">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<!-- Runs on update; New in 2.5 -->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<!-- The Frontend main copy section -->	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>myportfolio.php</filename>		
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<media destination="com_myportfolio" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>	
+	
+	<administration>
+		<!-- Administration main Language File Copy section -->
+		<languages folder="language/admin">
+			<language tag="en-GB">en-GB/en-GB.com_myportfolio.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_myportfolio.sys.ini</language>			
+			<language tag="en-FR">en-FR/en-FR.com_myportfolio.ini</language>
+			<language tag="en-FR">en-FR/en-FR.com_myportfolio.sys.ini</language>			
+			<language tag="en-ES">en-ES/en-ES.com_myportfolio.ini</language>
+			<language tag="en-ES">en-ES/en-ES.com_myportfolio.sys.ini</language>			
+			<language tag="en-DE">en-DE/en-DE.com_myportfolio.ini</language>
+			<language tag="en-DE">en-DE/en-DE.com_myportfolio.sys.ini</language>
+		</languages>
+		
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_myportfolio/images/icon-16-cpanel.png">COM_MYPORTFOLIO</menu>
+		<!--
+		<submenu>
+			<menu img="../media/com_myportfolio/images/icon-16-cat.png" link="option=com_myportfolio&amp;view=categories" alt="myPortfolio/category">COM_MYPORTFOLIO_CATEGORY</menu>
+			<menu img="../media/com_myportfolio/images/icon-16-temp.png" link="option=com_myportfolio&amp;view=templates" alt="myPortfolio/templates">COM_MYPORTFOLIO_TEMPLATES</menu>
+		</submenu>
+		-->
+		<!-- Administration File Section -->
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>myportfolio.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>controllers</folder>
+			<folder>help</folder>		
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>sql</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+		
+	<!-- Site main Language File Copy section -->
+	
+	<languages folder="language/site">
+		<language tag="en-GB">en-GB/en-GB.com_myportfolio.ini</language>
+		<language tag="en-FR">en-FR/en-FR.com_myportfolio.ini</language>
+		<language tag="en-ES">en-ES/en-ES.com_myportfolio.ini</language>
+		<language tag="en-DE">en-DE/en-DE.com_myportfolio.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" priority="2" name="MyPortfolio's Updates">https://samybaxy.net/updates/myportfolio.xml</server>
+	</updateservers>
+</extension>

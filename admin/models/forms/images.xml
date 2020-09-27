@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<form>
+		<fieldset>
+			<field name="files" type="media" label="COM_MYPORTFOLIO_UPLOAD_LABEL"
+			 directory="myportfolio" preview="true" />
+		</fieldset>
+	</form>

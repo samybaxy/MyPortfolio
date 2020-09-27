@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<form>
+		<fieldset>
+			<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"	readonly="true" class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"/>
+			
+			<field name="name" type="text" class="inputbox"
+			size="40" label="COM_MYPORTFOLIO_FIELD_TITLE_DESC" description="COM_MYPORTFOLIO_FIELD_TITLE_DESC" required="true" />
+			
+			<field name="alias" type="text" class="inputbox"
+			size="40" label="JFIELD_ALIAS_LABEL" description="COM_MYPORTFOLIO_ALIAS_DESC" />
+			
+			<field name="catid" type="category" extension="com_myportfolio"
+			label="JCATEGORY"
+			description="COM_MYPORTFOLIO_FIELD_CATEGORY_DESC" class="inputbox" >
+			</field>
+			
+			<field name="group_id" type="usergroup"	label="COM_MYPORTFOLIO_FIELD_USERGROUP_LABEL"
+			description="COM_MYPORTFOLIO_FIELD_USERGROUP_DESC" 	default="0" size="1" >
+			</field>
+			
+			<field name="duration" type="integer" filter="integer" first="15" last="90" step="15" default="30"
+			label="COM_MYPORTFOLIO_FIELD_DURATION_LABEL"
+			description="COM_MYPORTFOLIO_FIELD_DURATION_DESC" />
+			
+			<field name="description" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="safehtml" label="JGLOBAL_DESCRIPTION"
+			description="COM_MYPORTFOLIO_FIELD_DESCRIPTION_DESC" />
+			
+		<field name="state"	type="list"	label="JSTATUS"	description="COM_MYPORTFOLIO_FIELD_STATE_DESC"
+			class="inputbox span12 small" size="1" default="1">
+			<option	value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option	value="-2">JTRASHED</option>
+		</field>
+			
+			<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+			
+			<field name="created" type="calendar" label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC" class="inputbox" size="22" format="%d- %m- %Y"
+			filter="user_utc" />
+			
+			<field name="checked_out" type="hidden" filter="unset" />
+			<field name="checked_out_time" type="hidden" filter="unset" />
+			<field name="publish_up" type="calendar" label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+			
+			<field name="publish_down" type="calendar" label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+		</fieldset>
+	</form>

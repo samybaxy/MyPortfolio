@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+#uploadDone input[type=button] {
+	padding: 10px;
+	color: #fff;
+	background-color: #b0371b;
+}
+		
+#uploadDone input[type=button]:hover {
+	cursor: pointer;
+	background-color: #ccc;
+	color: #b0371b;
+	border: 1px solid #ccc;
+}

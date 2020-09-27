@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update>
+    <name>MyPortfolio</name>
+    <description>MyPortfolio 4</description>
+    <element>com_myportfolio</element>
+    <type>component</type>
+    <version>4.0.0</version>
+    <infourl title="Joomla!">https://www.samybaxy.net/</infourl>
+    <downloads>
+        <downloadurl type="full" format="zip">https://samybaxy.net/updates/com_myportfolio.zip</downloadurl>
+    </downloads>
+    <tags>
+    <tag>stable</tag>
+    </tags>
+    <maintainer>SamyBaxy</maintainer>
+    <maintainerurl>http://samybaxy.net</maintainerurl>
+    <section>Testing</section>
+    <targetplatform name="joomla" version="3.0"/>
+</update>

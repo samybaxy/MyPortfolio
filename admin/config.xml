@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component" label="COM_MYPORTFOLIO_CONFIG" description="COM_MYPORTFOLIO_CONFIG_DESC">
+		<field
+			name="lwidth" type="text" default="350px"
+			label="COM_MYPORTFOLIO_L_W"
+			description="COM_MYPORTFOLIO_L_W_DESC"
+		/>
+		<field
+			name="lheight" type="text" default="150px"
+			label="COM_MYPORTFOLIO_L_H"
+			description="COM_MYPORTFOLIO_L_H_DESC"
+		/>
+		<field
+			name="twidth" type="text" default="90px"
+			label="COM_MYPORTFOLIO_T_W"
+			description="COM_MYPORTFOLIO_T_W_DESC"
+		/>
+		<field
+			name="theight" type="text" default="90px"
+			label="COM_MYPORTFOLIO_T_H"
+			description="COM_MYPORTFOLIO_T_H_DESC"
+		/>
+		<field
+			name="projectNo" type="text" default="5"
+			label="COM_MYPORTFOLIO_P"
+			description="COM_MYPORTFOLIO_P_DESC"
+		/>
+		
+		<field name="ribbon" type="radio" default="1" label="COM_MYPORTFOLIO_RIBBON_CHECK" 
+		description="COM_MYPORTFOLIO_RIBBON_CHECK_DESC">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+		</field>
+
+		<field name="fullscreen" type="radio" default="0" label="Fullscreen"
+			   description="Set template fullscreen. Supported by some templates">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+		</field>
+	</fieldset>
+	<fieldset
+			name="permissions"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			description="JCONFIG_PERMISSIONS_DESC"
+	>
+
+		<field
+				name="rules"
+				type="rules"
+				label="JCONFIG_PERMISSIONS_LABEL"
+				filter="rules"
+				validate="rules"
+				component="com_tags"
+				section="component"
+		/>
+	</fieldset>
+</config>

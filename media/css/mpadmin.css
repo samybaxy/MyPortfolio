@@ -1,0 +1,38 @@
+/** header icons **/
+div.icon-48-cat {
+	background: url(../images/cat.png) transparent no-repeat;
+	line-height:48px;
+}
+
+div.icon-48-temp {
+	background: url(../images/temp.png) transparent no-repeat;
+	line-height:48px;
+}
+
+div.icon-48-feat {
+	background: url(../images/feat.png) transparent no-repeat;
+	line-height:48px;
+}
+
+div.icon-48-img {
+	background: url(../images/img.png) transparent no-repeat;
+	line-height:48px;
+}
+
+.icon-32-config { background-image: url(../images/icon-32-config.png);}
+
+.icon-32-tempinstall { background-image: url(../images/icon-32-config.png);}
+
+.icon-32-cpanel {background: url(../images/cpanel.png) no-repeat;}
+.icon-48-logo { background: url(../images/logo.png) no-repeat;
+                height: 60px;
+		text-indent: 190px;
+}
+
+a.modal img {
+    border: 2px solid #ccc
+}
+
+a.modal:hover img {
+    border: 2px solid #82e97f;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<form>
+		<fieldset>
+			<field name="name" type="text" label="JGLOBAL_FIELD_TITLE_LABEL" readonly="true" class="readonly"
+			description="JGLOBAL_FIELD_TITLE_DESC"/>
+			
+			<field name="lwidth" type="text" class="inputbox"
+			size="40" label="COM_MYPORTFOLIO_FIELD_LWIDTH" description="COM_MYPORTFOLIO_FIELD_LWIDTH_DESC" required="true" />
+			
+			<field name="lheight" type="text" class="inputbox"
+			size="40" label="COM_MYPORTFOLIO_FIELD_LHGT" description="COM_MYPORTFOLIO_FIELD_LHGT_DESC" />
+			
+			<field name="twidth" type="text" class="inputbox" label="COM_MYPORTFOLIO_FIELD_TWIDTH"
+			description="COM_MYPORTFOLIO_FIELD_TWIDTH_DESC" size="40" >
+			</field>
+			
+			<field name="theight" type="text" label="COM_MYPORTFOLIO_FIELD_THGT"
+			description="COM_MYPORTFOLIO_FIELD_THGT_DESC" size="40"  class="inputbox">
+			</field>
+			<field name="projectNo" type="text"	label="COM_MYPORTFOLIO_FIELD_PNO"
+			description="COM_MYPORTFOLIO_FIELD_PNO_DESC" size="40" >
+			</field>
+		</fieldset>
+	</form>

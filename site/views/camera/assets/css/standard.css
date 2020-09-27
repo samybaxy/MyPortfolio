@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+
+/* Projects */
+#preSlidex {
+	overflow: hidden!important;
+    margin: 0 0 0 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    link-style: none;
+    text-decoration: none;
+}
+
+#topLoads {
+    position: relative;
+    margin-top: 5px;
+}
+
+#imgDesc {
+	margin-top: 20px!important;
+    clear: both;
+    width: 57%;
+    float: left;
+    margin: 0 120px 0 20px;
+}
+
+#imgDesc h3, #portList h3 {
+    font-family: Calibri;
+    color: #135CAE!important;
+}
+
+#Slidecontent {
+    margin-bottom: 10px
+}
+
+
+#myContentLoad {
+    padding: 0 0 0 20px;
+}
+
+.fadeIn {
+	color: #959292!important;
+	font-size: 14px;
+}
+
+#portListNoS {
+    position: relative;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#portListNoS h3 {
+    font-family: calibri;
+}
+
+#portListNoS ul.windowList {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #8b8b8b;
+    text-align: left;
+}
+
+#portListNoS ul.windowList li {
+    float: left;
+    margin: 0 5px 10px 5px;    
+	text-align: center;
+}
+
+#preSlidex .jqDesc{
+    clear: both;   
+}
+
+#preloader {
+    position: fixed;
+	top: 0; left: 0;	
+    z-index: 90;
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+}
+
+#preloader .preImg {
+    position: relative;
+    margin: auto auto;
+    width: 50px;
+    padding-top: 250px;
+}
+
+ul.windowList,  ul.secList {
+	list-style: none!important;
+}
+
+ul.secList li {
+        clear: both;
+        border: none!important
+}
+
+ul.secList li a {
+	color: #000!important;
+}
+
+ul.secList li a:hover {
+	background: none!important;
+}
+
+a.camera_link:hover {
+	background: none!important;
+}
+
+#myPortfolio h4 {	
+	margin: 12px 0!important;
+}
+
+/** Css3 Effects **/
+.myportfoliofade {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.myportfoliofade:hover {
+	opacity: 0.5;
+	background: none!important;
+}
+
+.fltUrl {
+	display: inline-block;
+	float: right;
+}
+
+.fltUrl a {
+	color: #fff!important;
+}
+
+.fltUrl a:hover {
+	background: none!important;
+}
+
+.spcLinks {	
+	display: inline-block;
+	margin-top: 10px;
+	text-decoration: none;
+}
