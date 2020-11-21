@@ -1,3 +1,3 @@
 # MyPortfolio
-A Joomla based online portfolio/ profile system
-Exploration of a child.
+# A Joomla based online portfolio/ profile system
+# Explorations of a child.
